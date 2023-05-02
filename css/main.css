@@ -1,12 +1,12 @@
 /******** GLOBAL STYLES ********/
 html {
-	font-size:16px;
-  }
+	font-size: 16px;
+}
 
 
 body {
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-	font-size:.9em;
+	font-size: .9em;
 	color: #000000;
 }
 
@@ -166,4 +166,54 @@ footer span {
 	text-transform: lowercase;
 	color: #45610E;
 	font-size: 0.875em;
+}
+
+@media all and (min-width: 768px) {
+
+	/* Tablet styles here */
+	.bottom-section .content-wrapper {
+		justify-content: space-evenly;
+	}
+
+	.section-one {
+		width: 26%;
+	}
+
+	.section-two {
+		width: 35%;
+		border-left: 5px solid #EEE;
+		border-right: 5px solid #EEE;
+		border-top: none;
+		border-bottom: none;
+	}
+
+	.section-three {
+		width: 27%;
+	}
+}
+
+@media all and (min-width: 1200px) {
+
+	/* Desktop styles here */
+	header .content-wrapper {
+		justify-content:space-between ;
+		align-items:center;
+		padding: 0px 10px;
+	}
+
+	header h1 {
+		width: 22%;
+		padding: 20px 40px;
+		border-bottom: none;
+		text-align: left;
+	}
+
+	header nav {
+		width: 21%;
+	}
+
+	header nav ul {
+		display: flex;
+		justify-content: space-between;
+	}
 }
